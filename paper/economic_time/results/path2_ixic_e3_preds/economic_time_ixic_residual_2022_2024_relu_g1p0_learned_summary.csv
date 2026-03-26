@@ -1,0 +1,4 @@
+ic,icir,mae,tau_last_mean,market_shift_mean,pe_scale_mean,alpha_mean,fusion_gate_mean,context_gate_mean,bias_abs_mean,qk_abs_mean,bias_to_qk_ratio,tau_dev_std_mean,step_dev_std_mean,tau_corr_mean,tau_swap_delta_mean,pred_swap_delta_mean,bias_swap_delta_mean,attn_swap_delta_mean,qk_swap_delta_mean,rand_attn_swap_delta_mean,rand_qk_swap_delta_mean,attn_topk_delta_mean,attn_kl_mean,model_kind
+0.05096546310832026,0.18274693060205052,0.007227430145437967,,,,,,,,,,,,,,,,,,,,,,concat_a
+-0.011428571428571425,-0.047063653745941667,0.007236244960912565,,,,,,,,,,,,,,,,,,,,,,static
+0.06862637362637362,0.2774530998168688,0.007213127653122818,32.55182357632384,0.0,,1.0065739154815674,0.22748681005774712,,,0.06928858613177222,,1.5521276130724926,0.11300632581000729,0.9983086884021759,0.01288142265789971,7.596752625338885e-07,,1.2292576882791022e-05,0.0003536645983754448,0.000939569714094859,0.026908019972865335,1.3885534827583184e-05,8.302794516501828e-06,tau_rope

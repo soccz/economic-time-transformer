@@ -1,0 +1,21 @@
+flag,value,detail,index_symbol,indexret_spec,horizon,output_dir
+model4_joint_terms_significant,False,"Model 4 vs Model 3 added terms F=2.6181, p=0.073",^GSPC,ret1,1,paper/economic_time/results/finance_incremental_sweep/h1_ret1
+interaction_term_significant_in_model4,False,intensity_x_indexret in Model 4 p=0.326,^GSPC,ret1,1,paper/economic_time/results/finance_incremental_sweep/h1_ret1
+model4_beats_model3_oos_abs_err,False,"delta abs err=0.000009, one-sided p=0.253",^GSPC,ret1,1,paper/economic_time/results/finance_incremental_sweep/h1_ret1
+model4_beats_model3_oos_sq_err,False,"delta sq err=0.000000, one-sided p=0.2307",^GSPC,ret1,1,paper/economic_time/results/finance_incremental_sweep/h1_ret1
+model4_beats_model2_oos_abs_err,False,"delta abs err=0.000015, one-sided p=0.1718",^GSPC,ret1,1,paper/economic_time/results/finance_incremental_sweep/h1_ret1
+model4_joint_terms_significant,True,"Model 4 vs Model 3 added terms F=9.9806, p=4.683e-05",^GSPC,ret5,1,paper/economic_time/results/finance_incremental_sweep/h1_ret5
+interaction_term_significant_in_model4,True,intensity_x_indexret in Model 4 p=0.02643,^GSPC,ret5,1,paper/economic_time/results/finance_incremental_sweep/h1_ret5
+model4_beats_model3_oos_abs_err,False,"delta abs err=-0.000003, one-sided p=0.5633",^GSPC,ret5,1,paper/economic_time/results/finance_incremental_sweep/h1_ret5
+model4_beats_model3_oos_sq_err,False,"delta sq err=0.000000, one-sided p=0.3456",^GSPC,ret5,1,paper/economic_time/results/finance_incremental_sweep/h1_ret5
+model4_beats_model2_oos_abs_err,False,"delta abs err=0.000003, one-sided p=0.4357",^GSPC,ret5,1,paper/economic_time/results/finance_incremental_sweep/h1_ret5
+model4_joint_terms_significant,True,"Model 4 vs Model 3 added terms F=9.3756, p=8.564e-05",^GSPC,ret1,5,paper/economic_time/results/finance_incremental_sweep/h5_ret1
+interaction_term_significant_in_model4,True,intensity_x_indexret in Model 4 p=0.01734,^GSPC,ret1,5,paper/economic_time/results/finance_incremental_sweep/h5_ret1
+model4_beats_model3_oos_abs_err,False,"delta abs err=0.000018, one-sided p=0.3048",^GSPC,ret1,5,paper/economic_time/results/finance_incremental_sweep/h5_ret1
+model4_beats_model3_oos_sq_err,False,"delta sq err=0.000001, one-sided p=0.2742",^GSPC,ret1,5,paper/economic_time/results/finance_incremental_sweep/h5_ret1
+model4_beats_model2_oos_abs_err,False,"delta abs err=0.000100, one-sided p=0.06098",^GSPC,ret1,5,paper/economic_time/results/finance_incremental_sweep/h5_ret1
+model4_joint_terms_significant,True,"Model 4 vs Model 3 added terms F=14.3350, p=6.093e-07",^GSPC,ret5,5,paper/economic_time/results/finance_incremental_sweep/h5_ret5
+interaction_term_significant_in_model4,True,intensity_x_indexret in Model 4 p=0.009801,^GSPC,ret5,5,paper/economic_time/results/finance_incremental_sweep/h5_ret5
+model4_beats_model3_oos_abs_err,False,"delta abs err=0.000099, one-sided p=0.2045",^GSPC,ret5,5,paper/economic_time/results/finance_incremental_sweep/h5_ret5
+model4_beats_model3_oos_sq_err,False,"delta sq err=0.000004, one-sided p=0.3221",^GSPC,ret5,5,paper/economic_time/results/finance_incremental_sweep/h5_ret5
+model4_beats_model2_oos_abs_err,False,"delta abs err=0.000181, one-sided p=0.07006",^GSPC,ret5,5,paper/economic_time/results/finance_incremental_sweep/h5_ret5

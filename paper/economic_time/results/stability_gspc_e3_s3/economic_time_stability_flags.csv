@@ -1,0 +1,4 @@
+model_kind,below_static_count,below_concat_count,seed_count
+econ_time,1,3,3
+econ_time:pe_only,1,3,3
+econ_time:qk_only,1,3,3

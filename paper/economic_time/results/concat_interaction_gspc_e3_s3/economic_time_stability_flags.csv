@@ -1,0 +1,5 @@
+epochs,model_kind,below_static_count,below_concat_count,seed_count
+3,concat_a:indexret_only,2,3,3
+3,concat_a:intensity_indexret,1,0,3
+3,concat_a:intensity_only,2,3,3
+3,concat_a:position_only,2,3,3

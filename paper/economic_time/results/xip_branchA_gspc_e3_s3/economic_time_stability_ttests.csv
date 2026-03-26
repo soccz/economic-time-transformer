@@ -1,0 +1,10 @@
+epochs,seed,model_kind,vs,t,p,n
+3,7,static,concat_a:intensity_indexret,-2.6120190732709694,0.010431476245755595,98
+3,7,xip_a:intensity_indexret,concat_a:intensity_indexret,-0.5982381859323924,0.5510753400136013,98
+3,17,static,concat_a:intensity_indexret,-2.336949898062926,0.02149831014969347,98
+3,17,xip_a:intensity_indexret,concat_a:intensity_indexret,1.6935748293589965,0.09355515757277329,98
+3,27,static,concat_a:intensity_indexret,0.26286427944852575,0.7932127038376746,98
+3,27,xip_a:intensity_indexret,concat_a:intensity_indexret,-0.9418518727525661,0.3486082793838362,98
+3,7,xip_a:intensity_indexret,static,2.409771193167955,0.01784846723954517,98
+3,17,xip_a:intensity_indexret,static,2.6087395683801704,0.010525208333150897,98
+3,27,xip_a:intensity_indexret,static,-1.5961131831367141,0.11371650593404985,98

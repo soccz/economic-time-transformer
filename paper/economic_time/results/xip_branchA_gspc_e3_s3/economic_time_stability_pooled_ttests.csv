@@ -1,0 +1,3 @@
+epochs,model_kind,vs,t,p,n
+3,static,concat_a:intensity_indexret,-2.7823548193683756,0.005746918415676522,294
+3,xip_a:intensity_indexret,concat_a:intensity_indexret,0.09528134035004601,0.924156494295338,294

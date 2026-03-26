@@ -1,0 +1,10 @@
+ic,icir,mae,tau_last_mean,market_shift_mean,pe_scale_mean,alpha_mean,fusion_gate_mean,context_gate_mean,bias_abs_mean,qk_abs_mean,bias_to_qk_ratio,tau_dev_std_mean,step_dev_std_mean,tau_corr_mean,step_intensity_spearman_mean,tau_swap_delta_mean,pred_swap_delta_mean,bias_swap_delta_mean,attn_swap_delta_mean,qk_swap_delta_mean,rand_attn_swap_delta_mean,rand_qk_swap_delta_mean,attn_topk_delta_mean,attn_kl_mean,epochs,seed,model_kind,index_symbol,start,end
+0.0713465743575086,0.2641216615130136,0.007273167095062727,,,,,,,,,,,,,,,,,,,,,,,3,7,concat_a,^GSPC,2022-01-01,2024-12-31
+-0.019819466248037678,-0.07295789994564392,0.007326174130821273,,,,,,,,,,,,,,,,,,,,,,,3,7,concat_a:no_intensity,^GSPC,2022-01-01,2024-12-31
+-0.011428571428571425,-0.047063653745941667,0.007236244960912565,,,,,,,,,,,,,,,,,,,,,,,3,7,static,^GSPC,2022-01-01,2024-12-31
+0.03069858712715855,0.13260728304434602,0.007636617251661164,,,,,,,,,,,,,,,,,,,,,,,3,17,concat_a,^GSPC,2022-01-01,2024-12-31
+0.01697802197802198,0.07144951371439186,0.011474459455775016,,,,,,,,,,,,,,,,,,,,,,,3,17,concat_a:no_intensity,^GSPC,2022-01-01,2024-12-31
+-0.03613392773153558,-0.13271548715226864,0.007181881154127119,,,,,,,,,,,,,,,,,,,,,,,3,17,static,^GSPC,2022-01-01,2024-12-31
+0.06939627026816254,0.3007468679718415,0.008437270233162309,,,,,,,,,,,,,,,,,,,,,,,3,27,concat_a,^GSPC,2022-01-01,2024-12-31
+0.07748037676609104,0.306182532107375,0.018139790608023763,,,,,,,,,,,,,,,,,,,,,,,3,27,concat_a:no_intensity,^GSPC,2022-01-01,2024-12-31
+0.0785713983731266,0.3100164472668757,0.007532536397375666,,,,,,,,,,,,,,,,,,,,,,,3,27,static,^GSPC,2022-01-01,2024-12-31

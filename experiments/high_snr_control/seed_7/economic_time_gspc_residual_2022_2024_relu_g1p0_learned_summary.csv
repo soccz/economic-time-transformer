@@ -1,0 +1,8 @@
+ic,icir,mae,param_count,tau_last_mean,market_shift_mean,pe_scale_mean,alpha_mean,fusion_gate_mean,context_gate_mean,bias_abs_mean,qk_abs_mean,bias_to_qk_ratio,tau_dev_std_mean,step_dev_std_mean,tau_corr_mean,step_intensity_spearman_mean,tau_swap_delta_mean,pred_swap_delta_mean,bias_swap_delta_mean,attn_swap_delta_mean,qk_swap_delta_mean,rand_attn_swap_delta_mean,rand_qk_swap_delta_mean,attn_topk_delta_mean,attn_kl_mean,xip_h_int_norm_mean,xip_h_int_ratio_mean,xip_pred_delta_mean,xip_ic_off,xip_ic_drop,model_kind
+-0.040290423861852435,-0.14912425916681787,0.0077637233878307624,45266,,,,,,,,,,,,,,,,,,,,,,,,,,,,concat_a
+-0.047943485086342226,-0.17690614354596157,0.007499125156011095,45266,,,,,,,,,,,,,,,,,,,,,,,,,,,,concat_a:binned_all
+0.054937205651491364,0.21081393705790252,0.010320019644296638,45234,,,,,,,,,,,,,,,,,,,,,,,,,,,,concat_a:binned_intensity_only
+-0.026907378335949764,-0.1050745319605768,0.008791277941495746,45330,,,,,,,,,,,,,,,,,,,,,,,,,,,,film_a:binned_all
+0.056836749793028524,0.2022283573127453,0.007455710031245403,45266,,,,,,,,,,,,,,,,,,,,,,,,,,,,film_a:binned_intensity_only
+0.05561224489795918,0.19857273432544006,0.007424996178788461,45266,,,,,,,,,,,,,,,,,,,,,,,,,,,,film_a:intensity_only
+-0.029513343799058084,-0.11463255554256357,0.009158057622489163,45202,,,,,,,,,,,,,,,,,,,,,,,,,,,,static

@@ -1,0 +1,5 @@
+epochs,model_kind,below_static_count,below_concat_count,seed_count
+3,concat_a:binned_intensity_only,2,3,3
+3,concat_a:intensity_only,2,3,3
+3,concat_a:no_intensity,2,3,3
+3,concat_a:shuffled_intensity,1,3,3

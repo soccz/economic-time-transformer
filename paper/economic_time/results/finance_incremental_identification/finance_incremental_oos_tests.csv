@@ -1,0 +1,5 @@
+comparison,comparison_label,mean,t_nw,p_one_sided,n
+model4_vs_model3_abs_err,Model 4 vs Model 3 | abs err,8.95355188859759e-06,0.665116963845815,0.25298784263850493,1256
+model4_vs_model3_sq_err,Model 4 vs Model 3 | sq err,2.6537768473381125e-07,0.7363888732623114,0.23074703705732524,1256
+model4_vs_model2_abs_err,Model 4 vs Model 2 | abs err,1.4794620450651037e-05,0.947085986163242,0.17179748254556748,1256
+model4_vs_model2_vix_abs_err,Model 4 vs Model 2V | abs err,1.2411302989544516e-05,0.7870551435350889,0.215624793174787,1256

@@ -1,0 +1,6 @@
+flag,value,detail,index_symbol,indexret_spec,horizon
+model4_joint_terms_significant,True,"Model 4 vs Model 3 added terms F=9.9806, p=4.683e-05",^GSPC,ret5,1
+interaction_term_significant_in_model4,True,intensity_x_indexret in Model 4 p=0.02643,^GSPC,ret5,1
+model4_beats_model3_oos_abs_err,False,"delta abs err=-0.000003, one-sided p=0.5633",^GSPC,ret5,1
+model4_beats_model3_oos_sq_err,False,"delta sq err=0.000000, one-sided p=0.3456",^GSPC,ret5,1
+model4_beats_model2_oos_abs_err,False,"delta abs err=0.000003, one-sided p=0.4357",^GSPC,ret5,1

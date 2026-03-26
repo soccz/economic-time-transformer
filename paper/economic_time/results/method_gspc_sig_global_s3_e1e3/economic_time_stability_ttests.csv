@@ -1,0 +1,13 @@
+epochs,seed,model_kind,vs,t,p,n
+1,7,shape_signature_token:global_only,concat_a,-3.054130539734029,0.0029138924725721524,98
+1,7,simple_summary_token:global_only,concat_a,-0.013588790587560599,0.9891859575972162,98
+1,17,shape_signature_token:global_only,concat_a,-1.7251819783672784,0.08767937360600506,98
+1,17,simple_summary_token:global_only,concat_a,-1.4465779504820107,0.1512389256548277,98
+1,27,shape_signature_token:global_only,concat_a,-1.1553543243247164,0.25078341756542344,98
+1,27,simple_summary_token:global_only,concat_a,-2.6446795725835335,0.009538343534044334,98
+3,7,shape_signature_token:global_only,concat_a,-2.097336518121842,0.03856423929068923,98
+3,7,simple_summary_token:global_only,concat_a,-1.1722707421945093,0.24395944421643823,98
+3,17,shape_signature_token:global_only,concat_a,-1.2875184962027166,0.20097711212468927,98
+3,17,simple_summary_token:global_only,concat_a,-2.592135000466034,0.011011564849284517,98
+3,27,shape_signature_token:global_only,concat_a,-1.8916771532465047,0.06151710103290909,98
+3,27,simple_summary_token:global_only,concat_a,-2.2793240394252297,0.024839261147461433,98

@@ -1,0 +1,113 @@
+# Worklog
+
+## 2026-03-07
+
+- created a fresh paper subfolder to avoid mixing the new thesis with the older residual-momentum paper
+- compared three candidate centers:
+  - finance / residual momentum
+  - index-conditioned PE
+  - probabilistic uncertainty
+- locked the main topic to `Index-Conditioned Positional Encoding`
+- fixed the hierarchy:
+  - main: representation claim
+  - support: routing diagnostics
+  - support: probabilistic output
+  - demoted: FF3 residual economics
+- checked the current prototype experiment path:
+  - `../aaa/paper_test/h2_h3_ablation.py` already contains a usable `static vs concat_a vs cycle_pe` proxy structure
+  - but it currently downloads `Ken French` and `Yahoo` data on demand
+- checked local data availability:
+  - local DBs are mainly crypto-oriented
+  - no obvious prepared local `S&P 500` / `Nasdaq` research cache is present yet
+- added a paper-specific proxy runner:
+  - `paper_test/icpe_proxy_ablation.py`
+  - supports `static`, `concat`, and `IC-PE` proxy comparisons
+  - adds a simple state-swap sensitivity diagnostic
+- ran smoke tests on `S&P 500` anchor with sparse walk-forward:
+  - raw target: `static` beat `IC-PE` on CRPS
+  - residual target: `IC-PE` improved IC/ICIR but not CRPS
+- result:
+  - raw-return-centered version looks weak
+  - residual-target-centered representation story remains conditionally alive
+- added the first paper-specific actual neural path:
+  - `paper/index_conditioned_pe/icpe_hybrid_model.py`
+  - `paper_test/icpe_hybrid_supervised.py`
+- refactored the paper modules to be self-contained:
+  - `paper/index_conditioned_pe/icpe_transformer.py`
+  - `paper/index_conditioned_pe/icpe_cvae.py`
+  - no paper-facing dependency on legacy `models/*` modules remains
+- ran actual hybrid smoke tests on `S&P 500` anchor:
+  - point head, residual target
+  - CVAE head, residual target
+- ran matched one-epoch point-head checks on both:
+  - `S&P 500`
+  - `Nasdaq`
+- after enforcing the stock-only standalone boundary and rerunning:
+  - `S&P 500` 2020-2024 point: `concat_a > static/cycle_pe` on IC
+  - `S&P 500` 2022-2024 point: `concat_a > cycle_pe > static`
+  - `Nasdaq` 2020-2024 point: `cycle_pe > concat_a > static`
+- decoder read:
+  - CVAE path runs successfully, but current calibration is too wide and `concat_a` still leads there
+- current neural read:
+  - explicit index conditioning matters
+  - `cycle_pe` is alive but not stable enough to headline over `concat_a`
+  - superiority depends on anchor / window / training budget
+- added a hard `stock-only boundary` document so the paper path cannot drift back into legacy crypto assumptions
+
+## 2026-03-08
+
+- reran the repeated-seed stock-only stability path with a stricter four-mode comparison:
+  - `static`
+  - `concat_a`
+  - `cycle_pe_full`
+  - `flow_pe`
+- updated the stability outputs:
+  - `paper/index_conditioned_pe/results/hybrid_stability_residual_point_summary.csv`
+  - `paper/index_conditioned_pe/results/hybrid_stability_residual_point_winners.csv`
+- result:
+  - `concat_a` wins mean IC in every tested window
+  - `flow_pe` is usually second on IC
+  - `flow_pe` wins MAE in two windows, but its state-swap response stays near zero
+  - `cycle_pe_full` is not competitive in the current stock-only track
+- added a new true coordinate-warp implementation:
+  - `paper/index_conditioned_pe/icpe_transformer.py`
+  - mode name: `flow_pe`
+- important interpretation:
+  - `flow_pe` is a genuine context-driven temporal-coordinate warp
+  - unlike the earlier additive `cycle_pe` variants, it changes the positional index before sinusoidal evaluation
+- checked parameter fairness:
+  - `concat_a` and `flow_pe` are essentially matched in size
+  - this is not a parameter-count story
+- ran a one-shot smoke on `S&P 500, 2020-2024, 1 epoch`:
+  - `flow_pe` briefly won IC
+  - but had poor MAE and almost zero state-swap
+  - conclusion: single runs are not enough to support a PE-superiority claim
+- ran a fairer `3-epoch` follow-up on `S&P 500, 2020-2024`:
+  - `concat_a` kept the best test IC
+  - `flow_pe` collapsed back toward `static`
+  - conclusion: current coordinate-warp evidence is exploratory, not headline-ready
+- rewrote the current paper-facing result summary:
+  - `paper/index_conditioned_pe/05_actual_hybrid_results.md`
+- added a focused result note for the true warp branch:
+  - `paper/index_conditioned_pe/07_coordinate_warp_results.md`
+- added a routing-mask diagnostic:
+  - `paper_test/icpe_mask_diagnostic.py`
+  - `paper/index_conditioned_pe/08_routing_mask_results.md`
+- routing-mask read:
+  - masking top-attention timesteps did not hurt more than random masking
+  - in two cases it improved IC
+  - therefore the current attention extraction is not a defendable explanation mechanism
+- current locked read:
+  - robust: `explicit stock-index conditioning matters`
+  - robust: `concat_a` is the ranking baseline to beat
+  - not robust: `PE injection > concat conditioning`
+  - not robust: `CVAE uncertainty claim`
+  - not robust: `attention masking as routing proof`
+
+## Next Actions
+
+- keep the paper center honest:
+  - do not let the title or abstract imply that PE superiority is already proven
+- choose the next best technical branch:
+  - either replace the weak attention-topk diagnostic with a stronger branch-level routing ablation
+  - or improve the probabilistic head with a simpler calibrated alternative before returning to CVAE

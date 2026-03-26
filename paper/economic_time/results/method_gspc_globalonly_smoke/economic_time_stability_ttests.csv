@@ -1,0 +1,3 @@
+epochs,seed,model_kind,vs,t,p,n
+3,7,learned_tau_rope,concat_a,-2.5698405332378482,0.011696457438250476,98
+3,7,learned_tau_rope:global_only,concat_a,-1.331236872380565,0.186231425825701,98

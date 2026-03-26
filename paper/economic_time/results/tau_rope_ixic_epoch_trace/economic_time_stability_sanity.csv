@@ -1,0 +1,3 @@
+epochs,seed,model_kind,ic,static_ic,below_static,concat_ic,below_concat,pe_scale_mean
+1,7,tau_rope,0.028343799058084772,-0.03119309262166406,False,0.02938775510204082,True,
+3,7,tau_rope,0.06862637362637362,-0.011428571428571425,False,0.05096546310832026,False,

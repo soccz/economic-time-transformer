@@ -1,0 +1,2 @@
+ic,icir,mae,tau_last_mean,market_shift_mean,bias_abs_mean,qk_abs_mean,bias_to_qk_ratio,tau_dev_std_mean,step_dev_std_mean,tau_corr_mean,tau_swap_delta_mean,pred_swap_delta_mean,bias_swap_delta_mean,attn_swap_delta_mean,qk_swap_delta_mean,model_kind
+0.021836965710887515,0.08520139713574969,0.007841519811141964,43.94186424722477,0.00019314626116562179,,0.19018459816976468,,4.610967691869152,0.09316317424330176,0.9995643861196479,0.01980348463189237,1.9378662109375e-05,,0.00011969819543788172,0.003919766306763097,econ_time

@@ -1,0 +1,4 @@
+index_symbol,start,end,winner_ic,winner_mae,winner_crps,winner_qce,cycle_minus_concat_ic,cycle_full_minus_concat_ic,flow_minus_concat_ic
+^GSPC,2020-01-01,2024-12-31,flow_pe,concat_a,static,flow_pe,,,0.05950840929820693
+^GSPC,2022-01-01,2024-12-31,concat_a,static,static,static,,,-0.07169580419580418
+^IXIC,2020-01-01,2024-12-31,flow_pe,concat_a,static,flow_pe,,,0.042884596106614874

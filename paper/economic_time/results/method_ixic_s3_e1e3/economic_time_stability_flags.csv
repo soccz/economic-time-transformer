@@ -1,0 +1,5 @@
+epochs,model_kind,below_static_count,below_concat_count,seed_count
+1,learned_tau_rope,1,2,3
+1,tau_rope,2,3,3
+3,learned_tau_rope,1,2,3
+3,tau_rope,1,2,3

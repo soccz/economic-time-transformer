@@ -1,0 +1,6 @@
+flag,value,detail
+model4_joint_terms_significant,False,"Model 4 vs Model 3 added terms F=2.6181, p=0.073"
+interaction_term_significant_in_model4,False,intensity_x_indexret in Model 4 p=0.326
+model4_beats_model3_oos_abs_err,False,"delta abs err=0.000009, one-sided p=0.253"
+model4_beats_model3_oos_sq_err,False,"delta sq err=0.000000, one-sided p=0.2307"
+model4_beats_model2_oos_abs_err,False,"delta abs err=0.000015, one-sided p=0.1718"

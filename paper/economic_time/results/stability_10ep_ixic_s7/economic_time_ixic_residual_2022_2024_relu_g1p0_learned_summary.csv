@@ -1,0 +1,4 @@
+ic,icir,mae,param_count,tau_last_mean,market_shift_mean,pe_scale_mean,alpha_mean,fusion_gate_mean,context_gate_mean,bias_abs_mean,qk_abs_mean,bias_to_qk_ratio,tau_dev_std_mean,step_dev_std_mean,tau_corr_mean,step_intensity_spearman_mean,tau_swap_delta_mean,pred_swap_delta_mean,bias_swap_delta_mean,attn_swap_delta_mean,qk_swap_delta_mean,rand_attn_swap_delta_mean,rand_qk_swap_delta_mean,attn_topk_delta_mean,attn_kl_mean,xip_h_int_norm_mean,xip_h_int_ratio_mean,xip_pred_delta_mean,xip_ic_off,xip_ic_drop,model_kind
+0.0730690737833595,0.31260227150268216,0.007230842497854318,45266,,,,,,,,,,,,,,,,,,,,,,,,,,,,concat_a
+-0.05763736263736263,-0.19308618065674807,0.007164303168504175,45330,,,,,,,,,,,,,,,,,,,,,,,,,,,,film_a
+0.014701726844583993,0.05847452826775221,0.007230076509365123,45202,,,,,,,,,,,,,,,,,,,,,,,,,,,,static

@@ -1,0 +1,6 @@
+comparison,comparison_label,restriction,f_stat,p_value,df_num,df_denom,delta_rsquared_adj,index_symbol,indexret_spec,horizon
+model2_vs_model1,Model 2 > Model 1,bear_x_intensity = 0,2.834730617506136,0.09228287651243895,1.0,8526.0,,^GSPC,ret5,5
+model4_vs_model3,Model 4 > Model 3,"indexret = 0, intensity_x_indexret = 0",14.334954769732889,6.093327360627173e-07,2.0,8524.0,,^GSPC,ret5,5
+model4_interaction_only,Model 4 interaction only,intensity_x_indexret = 0,6.673738912326374,0.009800868205122909,1.0,8524.0,,^GSPC,ret5,5
+model4_vs_model2_adj_r2,Model 4 vs Model 2,,,,,,0.01578847806506445,^GSPC,ret5,5
+model4_vs_model2_vix_adj_r2,Model 4 vs Model 2V,,,,,,0.016052004663626884,^GSPC,ret5,5

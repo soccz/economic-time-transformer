@@ -1,0 +1,2 @@
+epochs,model_kind,ic_mean,ic_std,icir_mean,mae_mean,mae_std,step_intensity_spearman_mean,tau_corr_mean,pe_scale_mean,pe_scale_std,fusion_gate_mean,context_gate_mean,attn_swap_delta_mean,qk_swap_delta_mean
+3,learned_tau_rope,0.0002433281004709585,,0.000992126014034767,0.007296654393099367,,0.25243218643026866,0.9999994459200878,,,0.3102483806074882,,6.487852690219258e-07,1.966665330228909e-05
